@@ -1,0 +1,69 @@
+GraphQL
+
+Mutace - Query ktera mění data
+
+Jakékoliv knihovny
+
+React-Native
+- Apium
+- Detox
+
+
+
+TopPlayers
+	- Button login
+	- button registration
+
+Registrace screen
+Login screen
+Game screen
+	- tiles resolvint
+	- main rerender method
+	- arrow keys holder
+	
+
+1. zprovoznit routing OK
+2. Zprovoznit autentizaci OK
+3. Vyrenderovat list Top uzivatelu OK
+	- Vyřešit duplicity NTH
+4. Vytvorit herni plan 
+	- zprovoznit komunikaci na api OK
+	- vytvořit tile OK
+	- vytvořit renderování OK skoro
+5. Registrace uživatele NESTIHL
+
+
+
+
+mutation {
+  processGame(game: {
+    state: [[2,4,6,8],[2,4,6,8],[2,4,6,8],[2,4,6,8]]
+    score:5,
+    direction: Up
+  }) {
+    state,
+    score,
+    finished
+  }
+}
+
+# Write your query or mutation here
+mutation {
+  createUser(data: {
+    name: "Jakub Káňa",
+    email: "jakubkana@gmail.com", 
+    password: "Admin123"}) {
+name
+  }
+  
+}
+
+
+mutation {
+	authenticateUserWithPassword(
+    email: "jakubkana@gmail.com", 
+    password:"Admin123") {
+    token
+    
+  }
+}

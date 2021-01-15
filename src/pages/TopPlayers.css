@@ -1,0 +1,13 @@
+.newgame-buttons button {
+    margin: 10px;
+    font-size:16px;
+    width: 160px;
+    height: 40px;
+    color: #F9F6F2;
+    background-color: #8F7A66;
+    border: none;
+}
+
+.top-players {
+    min-height: 300px;
+}

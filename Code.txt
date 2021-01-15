@@ -1,0 +1,31 @@
+ // const handleUpdate = useCallback(() => {
+  //   client
+  //     .mutate({
+  //       mutation: UPDATE_GAMEPLAN,
+  //       variables: {
+  //         game: {
+  //           "state": [
+  //             [2, 4, 8, 8],
+  //             [2, 4, 8, 8],
+  //             [2, 4, 8, 8],
+  //             [2, 4, 8, 8]
+  //           ],
+  //           score: gameState.score,
+  //           direction: "Up",
+  //         },
+  //       },
+  //     })
+  //     .then((res) => console.log(res))
+  //     .catch((err) => console.log(err));
+  // },[gameState]);
+  
+  
+  
+  
+  const renderMatrix = (matrix: number[][]) => {
+  let result = "";
+  for (let i = 0; i < matrix.length; i++) {
+    result += `[${matrix[i].map((elem) => elem).join(",")}]\n`;
+  }
+  return result;
+};

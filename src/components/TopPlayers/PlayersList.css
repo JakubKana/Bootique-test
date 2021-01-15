@@ -1,0 +1,9 @@
+.players-list {
+    list-style: none;
+}
+
+.player-item {
+    font-size: 20px;
+    text-align: center;
+    
+}
